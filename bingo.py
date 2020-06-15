@@ -1,3 +1,6 @@
+'''
+Just a simple bingo game developed with pygame
+'''
 import pygame
 import random
 from pygame import *
