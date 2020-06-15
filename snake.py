@@ -1,3 +1,8 @@
+'''
+A snake game developed with pygame, changing the variable PLAYER_COLOR can change the color of player, 
+also the three comment line 310-312 are used to set the background music of the game. 
+Just save the music file in the same directory of the snake file and change the name in line 310
+'''
 import pygame
 import random
 import math
