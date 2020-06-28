@@ -1,3 +1,7 @@
+'''
+change FILENAME to the corresponding background music and put it with the py file in the same directory
+'''
+
 import pygame
 from random import choice, randrange
 from time import time
