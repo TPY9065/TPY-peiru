@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <main id="app">
+        <form @submit.prevent="GenerateShortUrl()" class="form">
+            <div v-if="!slug">
+                <label for="url" class="url">Url: </label>
+                <input v-model="url" name="url" id="url">
+                <button type="submit" class="generate">Generate</button>
+            </div>
+        </form>
+        <div v-if="err">
+            <p class="error">{{err}}</p>
+        </div>
+        <div v-if="slug">
+            <p class="slug">The short url is <a :href='url' class="slug" target="_blank">{{slug}}</a></p>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
+    <script src="app.js"></script>
+</body>
+</html>
